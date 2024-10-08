@@ -40,3 +40,9 @@ def register_view(request):
         form = UserCreationForm()
 
     return render(request, 'registration/signup.html', {'form': form})
+
+def usabilidad_view(request):
+    return render(request, 'evaluation/usabilidad.html')
+
+def accesibilidad_view(request):
+    return render(request, 'evaluation/accesibilidad.html')

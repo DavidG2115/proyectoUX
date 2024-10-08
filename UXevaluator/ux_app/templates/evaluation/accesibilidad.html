@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block title %}Accesibilidad{% endblock %}
+
+{% block content %}
+
+<div class="py-1 bg-white  row">
+    <div class="position-relative">
+        <div class="left-0 top-0 position-absolute bg-black rounded-4 col-12"></div>
+    </div>
+    <div class="col-md-11 row">
+        <p class="text-black fs-1 fw-semibold font-family-Inter col-md-5 m-0 px-3 py-2">Usabilidad</p>
+        <p class="opacity-75 text-black fs-6 fw-normal font-family-Inter col-md-12 m-0 px-3 py-2">La usabilidad en UX mide qué tan fácil e intuitivo es para los usuarios interactuar con un producto digital. Se enfoca en que los usuarios puedan realizar tareas de manera eficiente, sin errores y con una experiencia satisfactoria. Un buen diseño usable facilita el aprendizaje, mejora la eficiencia y reduce la frustración, asegurando que el producto sea accesible y agradable de utilizar.</p>
+    </div>
+</div>
+
+<div class="container my-4">
+    <table class="table table-bordered table-hover">
+        <!-- Encabezado con fondo negro y texto blanco -->
+        <thead>
+            <tr class="table-dark">
+                <th socope="col">#</th>
+                <th socope="col">Criterio</th>
+                <th socope="col">Descripción</th>
+                <th scope="col">Evaluación</th>
+                <th scope="col">Observaciones</th>
+            </tr>
+        </thead>
+        <!-- Cuerpo de la tabla -->
+        <tbody>
+            <!-- Fila 1 -->
+            <tr>
+                <th scope="row">1.1</th>
+                <td>Facilidad de Aprendizaje</td>
+                <td>¿Los nuevos usuarios pueden aprender a usar el software rápidamente?</td>
+                <td>
+                    <div class="d-flex justify-content-between">
+                        <label style="color: #007bff;"><input type="radio" name="evaluacion1" value="1" style="accent-color: #007bff;"> 1</label>
+                        <label style="color: #28a745;"><input type="radio" name="evaluacion1" value="2" style="accent-color: #28a745;"> 2</label>
+                        <label style="color: #ffc107;"><input type="radio" name="evaluacion1" value="3" style="accent-color: #ffc107;"> 3</label>
+                        <label style="color: #fd7e14;"><input type="radio" name="evaluacion1" value="4" style="accent-color: #fd7e14;"> 4</label>
+                        <label style="color: #dc3545;"><input type="radio" name="evaluacion1" value="5" style="accent-color: #dc3545;"> 5</label>
+                    </div>
+                </td>
+                <td><input type="text" class="form-control" placeholder="Escribe observaciones..."></td>
+            </tr>
+            <!-- Fila 2 -->
+            <tr>
+                <th scope="row">1.2</th>
+                <td>Retroalimentación del Sistema</td>
+                <td>¿El software proporciona retroalimentación clara?</td>
+                <td>
+                    <div class="d-flex justify-content-between">
+                        <label style="color: #007bff;"><input type="radio" name="evaluacion2" value="1" style="accent-color: #007bff;"> 1</label>
+                        <label style="color: #28a745;"><input type="radio" name="evaluacion2" value="2" style="accent-color: #28a745;"> 2</label>
+                        <label style="color: #ffc107;"><input type="radio" name="evaluacion2" value="3" style="accent-color: #ffc107;"> 3</label>
+                        <label style="color: #fd7e14;"><input type="radio" name="evaluacion2" value="4" style="accent-color: #fd7e14;"> 4</label>
+                        <label style="color: #dc3545;"><input type="radio" name="evaluacion2" value="5" style="accent-color: #dc3545;"> 5</label>
+                    </div>
+                </td>
+                <td><input type="text" class="form-control" placeholder="Escribe observaciones..."></td>
+            </tr>
+            <!-- Fila 3 -->
+            <tr>
+                <th scope="row">1.3</th>
+                <td>Personalización</td>
+                <td>¿El software permite a los usuarios personalizar su experiencia?</td>
+                <td>
+                    <div class="d-flex justify-content-between">
+                        <label style="color: #007bff;"><input type="radio" name="evaluacion3" value="1" style="accent-color: #007bff;"> 1</label>
+                        <label style="color: #28a745;"><input type="radio" name="evaluacion3" value="2" style="accent-color: #28a745;"> 2</label>
+                        <label style="color: #ffc107;"><input type="radio" name="evaluacion3" value="3" style="accent-color: #ffc107;"> 3</label>
+                        <label style="color: #fd7e14;"><input type="radio" name="evaluacion3" value="4" style="accent-color: #fd7e14;"> 4</label>
+                        <label style="color: #dc3545;"><input type="radio" name="evaluacion3" value="5" style="accent-color: #dc3545;"> 5</label>
+                    </div>
+                </td>
+                <td><input type="text" class="form-control" placeholder="Escribe observaciones..."></td>
+            </tr>
+            <!-- Fila 4 -->
+            <tr>
+                <th scope="row">1.4</t>
+                <td>Prevención de Errores</td>
+                <td>¿El software minimiza la posibilidad de errores del usuario?</td>
+                <td>
+                    <div class="d-flex justify-content-between">
+                        <label style="color: #007bff;"><input type="radio" name="evaluacion4" value="1" style="accent-color: #007bff;"> 1</label>
+                        <label style="color: #28a745;"><input type="radio" name="evaluacion4" value="2" style="accent-color: #28a745;"> 2</label>
+                        <label style="color: #ffc107;"><input type="radio" name="evaluacion4" value="3" style="accent-color: #ffc107;"> 3</label>
+                        <label style="color: #fd7e14;"><input type="radio" name="evaluacion4" value="4" style="accent-color: #fd7e14;"> 4</label>
+                        <label style="color: #dc3545;"><input type="radio" name="evaluacion4" value="5" style="accent-color: #dc3545;"> 5</label>
+                    </div>
+                </td>
+                <td><input type="text" class="form-control" placeholder="Escribe observaciones..."></td>
+            </tr>
+            <!-- Fila 5 -->
+            <tr>
+                <th scope="row">1.5</th>
+                <td>Cotidianidad</td>
+                <td>¿El software brinda experiencias cotidianas memorables?</td>
+                <td>
+                    <div class="d-flex justify-content-between">
+                        <label style="color: #007bff;"><input type="radio" name="evaluacion5" value="1" style="accent-color: #007bff;"> 1</label>
+                        <label style="color: #28a745;"><input type="radio" name="evaluacion5" value="2" style="accent-color: #28a745;"> 2</label>
+                        <label style="color: #ffc107;"><input type="radio" name="evaluacion5" value="3" style="accent-color: #ffc107;"> 3</label>
+                        <label style="color: #fd7e14;"><input type="radio" name="evaluacion5" value="4" style="accent-color: #fd7e14;"> 4</label>
+                        <label style="color: #dc3545;"><input type="radio" name="evaluacion5" value="5" style="accent-color: #dc3545;"> 5</label>
+                    </div>
+                </td>
+                {% comment %} <td><input type="text" class="form-control" placeholder="Escribe observaciones..."></td> {% endcomment %}
+                <td><textarea class="form-control" placeholder="Leave a comment here" style="height: 40px; min-height: 40px; max-height: 100px; resize: vertical;"></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<a href="{% url 'logout' %}">Logout</a>
+
+
+{% endblock %}

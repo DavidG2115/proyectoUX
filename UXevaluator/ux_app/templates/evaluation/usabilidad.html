@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Usabilidad{% endblock %}
+
+{% block content %}
+<style>
+    .square-icon-container {
+        position: relative;
+        width: 60px; /* Ancho completo */
+        padding-top: 60px; /* Mantiene la relación 1:1 */
+        margin-top: 20px;
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px; /* Tamaño del ícono */
+    }
+
+    /* Estilos responsivos */
+    .content-padding {
+        padding: 0.5rem 1rem; /* Padding para pantallas pequeñas */
+    }
+
+    @media (min-width: 768px) { /* Para pantallas medianas y grandes */
+        .content-padding {
+            padding: 1rem 2rem; /* Ajuste de padding para pantallas más grandes */
+        }
+    }
+</style>
+
+<div class="py-3 m-5 bg-white row g-0 align-items-start">
+    <!-- Icono a la izquierda -->
+    <div class="col-md-1 d-flex justify-content-center align-items-start">
+        <div class="square-icon-container bg-black rounded-4">
+            <i class="fa-solid icon text-white fa-hand-point-up"></i>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="col-md-11 content-padding"> <!-- Clase personalizada para padding -->
+        <p class="text-black fs-1 fw-semibold font-family-Inter m-0">1. Usabilidad</p>
+        <p class="opacity-75 text-black fs-6 fw-normal font-family-Inter m-1">
+            La usabilidad en UX mide qué tan fácil e intuitivo es para los usuarios interactuar con un producto digital. Se enfoca en que los usuarios puedan realizar tareas de manera eficiente, sin errores y con una experiencia satisfactoria. Un buen diseño usable facilita el aprendizaje, mejora la eficiencia y reduce la frustración, asegurando que el producto sea accesible y agradable de utilizar.    
+        </p>
+    </div>
+</div>
+
+<div class="position-relative">
+    <div class="left-0 top-0 position-absolute bg-black rounded-4 col-12"></div>
+</div>  
+{% endblock %}

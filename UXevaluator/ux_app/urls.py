@@ -7,5 +7,7 @@ urlpatterns = [
     path("home/", home, name="home"),
     path("login/", login_view, name="login"),
     path('logout/', logout_view, name='logout'),
+    path('usabilidad/', usabilidad_view, name='usabilidad'),
+    path('accesibilidad/', usabilidad_view, name='accesibilidad'),
     path('', include('django.contrib.auth.urls')),
 ]
